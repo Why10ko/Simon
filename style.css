@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 10px;
+    min-height: 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerButton {
+    padding: 10px;
+    margin: 5px 5px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.intro{
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.intro_h1{
+    position: absolute;
+    font-size: 250px;
+    color: white;
+    opacity: .2;
+    transition: 1.5s;
+}
+
+.intro_h1:hover {
+    opacity: .9;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+
+.intro_img{
+    object-fit: cover;
+    width: 1250px;
+    
+}
+
+.title{
+    text-align: center; 
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.title p {
+    font-size: 25px
+}
+
+.title_h2 {
+    font-size: 100px;
+    margin: 50px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+/* слайдер */
+
+.title_pictur {
+    width: 100%;
+    height: 100%
+}
+
+.title_slider {
+    width: 300px;
+    height: 618px;
+    overflow: hidden;
+    position: relative;
+}
+
+.title_slider_line{
+    height: 100%;
+    width: 200%;
+    display: flex;
+}
+
+
+.title_slider_nav{
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider_pictur {
+    width: 50%;
+    transition: all .6s ease;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0
+}
+#r2:checked ~ .s1 {
+    margin-left: -50%
+}
+
+.bar {
+    height: 10px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 10px;
+    opacity: .8;
+    transition: all .4s ease;
+}
+
+.bar:hover {
+    opacity: 1;
+    transform:scale(1.5)
+}
+
+input[name='r'] {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Конец слайдера */
+
+.content{
+    margin: 40px 0;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content_block{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.footer {
+    text-align: right;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #171717a7;
+    margin: 40px auto;
+    width: 1250px;
+    color: white;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-right: 10px;
+}
