@@ -2,121 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville&family=Pacifico&family=Roboto&display=swap"
-        rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cat</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville&family=Pacifico&family=Roboto&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <nav>
-                <a class="headerButton" href="#content">Главный контент</a>
-                <a class="headerButton" href="#footer">Контакты</a>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-        <article class="container">
-            <section class="intro">
-                <h1 class="intro_h1">the Кот</h1>
-                <img class="intro_img" src="./img/photo_2021-10-27_13-50-40.jpg" alt="">
-            </section>
-            <div class="title">
-                <section>
-                    <h2 class="title_h2">Simon</h2>
-                    <p>Меня зовут Simon и это моя история</p>
-                </section>
+	<header class="header" >
+		<div class="container">
+			<nav>
+				<a class="headerScrool" href="#content">Главный контент</a>
+				<a class="headerScrool" href="#footer">Контакты</a>
+			</nav>
+		</div>
+	</header>
+	<main class="main" id="main">
+		<article class="container">
+			<section class="intro">
+				<h1 class="intro_h1">the Кот</h1>
+				<img class="intro_img" src="./img/photo_2021-10-27_13-50-40.jpg" alt="">
+			</section>
+			<div class="title">
+				<section>
+					<h2 class="title_h2">Simon</h2>
+					<p>Меня зовут Simon и это моя история</p>
+				</section>
 
-                <!-- Слайдер -->
+				<!-- Слайдер -->
 
-                <div class="title_slider">
-                    <div class="title_slider_line">
-                        <input type="radio" name="r" id="r1">
-                        <input type="radio" name="r" id="r2">
+				<div class="title_slider">
+					<div class="title_slider_line">
+						<img class="title_slider_pictur" src="img/photo_2023-05-24_21-49-48.jpg" alt="Фото кота 1">
+						<img class="title_slider_pictur" src="img/f5f61892-bcc8-429b-8e3f-9deffab09d77.jpg" alt="Фото кота 2">
+					</div>
+					<div class="title_slider_nav">
+						<bytton class="prev-button"></bytton>
+						<button class="next-button"></button>
+					</div>
+				</div>
 
-                        <div class="slider_pictur s1">
-                            <img class="title_pictur" src="img/photo_2023-05-24_21-49-48.jpg" alt="">
-                        </div>
-                        <div class="slider_pictur">
-                            <img class="title_pictur" src="img/f5f61892-bcc8-429b-8e3f-9deffab09d77.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="title_slider_nav">
-                        <label for="r1" class="bar"></label>
-                        <label for="r2" class="bar"></label>
-                    </div>
-                </div>
+				<!--  конец слайдера -->
 
-                <!--  конец слайдера -->
+			</div>
+			<section id="content" class="content">
+				<h2>Немного смешных роликов</h2>
+				<div class="content_block">
+					<div class="content_section">
+						<video controls width="300">
+							<source src="./img/WhatsApp Video 2023-05-22 at 00.37.13.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="content_section">
+						<video controls width="300">
+							<source src="./img/WhatsApp Video 2023-05-22 at 00.48.34.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</section>
 
-            </div>
-            <section id="content" class="content">
-                <h2>Немного смешных роликов</h2>
-                <div class="content_block">
-                    <div class="content_section">
-                        <video controls width="300">
-                            <source src="./img/WhatsApp Video 2023-05-22 at 00.37.13.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="content_section">
-                        <video controls width="300">
-                            <source src="./img/WhatsApp Video 2023-05-22 at 00.48.34.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </section>
-            <div class="add_cat">
-                <div class="add_cat-my_cat">
-                    <div class="add_cat-resume">
-                        <img class="resume_img" src="./img/Безымянный.png" alt="Кот">
-                        <p>Имя: Simon</p>
-                        <p>Вес: 4кг.</p>
-                        <p>Скорость: Cветовая</p>
-                    </div>
-                    <div class="add_cat-description">
-                        <p>Привет, здесь я напишу о своем коте </p>
-                    </div>
-                </div>
-                <div class="add_your_cat"></div>
-            </div>
-            <form class="form_block" action="">
-                <h2 class="form_block-h2">Добавь своего кота</h2>
-                <div>
-                    <input class="form_block-input name" type="text" name="name" placeholder="Введите имя" required>
-                </div>
-                <div>
-                    <input class="form_block-input weight" type="text" name="weight" placeholder="Введите вес" required>
-                </div>
-                <div>
-                    <input class="form_block-input speed" type="number" name="speed" placeholder="Введите скорость"
-                        required>
-                </div>
-                <div>
-                    <textarea class="inform" name="" id="" cols="50" rows="10"></textarea>
-                </div>
-                <input class="form_block_button" type="button" value="button">
-            </form>
-        </article>
-    </main>
-    <footer id="footer" class="footer">
-        <address class="container">
-            <ul>
-                <li>Номер телефона Симона +79030000000</li>
-                <li>Номер телефона Хозяина #1 +79030000001</li>
-                <li>Номер телефона Хозяина #2 +79030000002</li>
-                <li>Номер телефона Хозяина #3 +79030000003</li>
-            </ul>
-        </address>
-    </footer>
-    <script src="./script.js"></script>
+			<div class="render_container"></div>
+			
+			<form class="form_block" name="formBlock" action="">
+				<h2 class="form_block-h2">Добавь своего кота</h2>
+				<div >
+					<input class="form_block-input name" type="text" name="nickname" placeholder="Введите имя" >
+					<p id="error-nickname" class="error_hidden error_style_input">Введите данные в поле</p>
+				</div>
+				<div >
+					<input class="form_block-input weight" type="text" name="weight" placeholder="Введите вес" >
+					<p id="error-weight" class="error_hidden error_style_input">Введите данные в поле</p>
+				</div>
+				<div >
+					<input class="form_block-input speed" type="number" name="speed" placeholder="Введите скорость" >
+					<p id="error-speed" class="error_hidden error_style_input">Введите данные в поле</p>
+				</div>
+				<div >
+					<textarea class="inform" name="textarea" id="" cols="50" rows="10" placeholder="История"></textarea>
+					<p id="error-textarea" class="error_hidden error_style_input">Введите данные в поле</p>
+				</div>
+				<button class="form_block_button" type="submit">Добавить</button>
+			</form>
+		</article>
+	</main>
+	<footer id="footer" class="footer">
+		<address class="container">
+			<a class="footerScrool" href="#main">Вернуться наверх</a>
+			<ul>
+				<li>Номер телефона Симона +79030000000</li>
+				<li>Номер телефона Хозяина #1 +79030000001</li>
+				<li>Номер телефона Хозяина #2 +79030000002</li>
+				<li>Номер телефона Хозяина #3 +79030000003</li>
+			</ul>
+		</address>
+	</footer>
+	<script src="./components/randomIndex.js"></script>
+	<script src="./components/card.js"></script>
+	<script src="./components/scroll.js"></script>
+	<script src="./script.js"></script>
+	<script src="./components/slider.js"></script>
+	<script src="./components/validationInput.js"></script>
 </body>
 
 </html>
