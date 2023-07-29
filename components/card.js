@@ -34,7 +34,7 @@ class Card {
 			<div class="add_block-description">
 				<p class="add_block-description_paragraph">${this.description}</p>
 			</div>
-			<img src='../img/closeImg.png' class="imgCloseCard"></img>
+			<img src='img/closeImg.png' class="imgCloseCard"></img>
 		`)
 		
 		this.container = container
