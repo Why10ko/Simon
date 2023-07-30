@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<header class="header" >
+	<header class="header">
 		<div class="container">
 			<nav>
 				<a class="headerScrool" href="#content">Главный контент</a>
@@ -43,8 +43,8 @@
 						<img class="title_slider_pictur" src="img/f5f61892-bcc8-429b-8e3f-9deffab09d77.jpg" alt="Фото кота 2">
 					</div>
 					<div class="title_slider_nav">
-						<bytton class="prev-button"></bytton>
-						<button class="next-button"></button>
+						<a class="prev-button"></a>
+						<a class="next-button"></a>
 					</div>
 				</div>
 
@@ -55,36 +55,36 @@
 				<h2>Немного смешных роликов</h2>
 				<div class="content_block">
 					<div class="content_section">
-						<video controls width="300">
-							<source src="./img/WhatsApp Video 2023-05-22 at 00.37.13.mp4" type="video/mp4">
+						<video controls width="300" onloadstart="this.volume=0.5">
+							<source src="./img/Think.mp4" type="video/mp4">
 						</video>
 					</div>
 					<div class="content_section">
-						<video controls width="300">
-							<source src="./img/WhatsApp Video 2023-05-22 at 00.48.34.mp4" type="video/mp4">
+						<video controls width="300" onloadstart="this.volume=0.1">
+							<source src="./img/Fight.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
 			</section>
 
 			<div class="render_container"></div>
-			
-			<form class="form_block" name="formBlock" action="">
+
+			<form class="form_block" name="formBlock">
 				<h2 class="form_block-h2">Добавь своего кота</h2>
-				<div >
-					<input class="form_block-input name" type="text" name="nickname" placeholder="Введите имя" >
+				<div>
+					<input class="form_block-input name" type="text" name="nickname" placeholder="Введите имя">
 					<p id="error-nickname" class="error_hidden error_style_input">Введите данные в поле</p>
 				</div>
-				<div >
-					<input class="form_block-input weight" type="text" name="weight" placeholder="Введите вес" >
+				<div>
+					<input class="form_block-input weight" type="text" name="weight" placeholder="Введите вес">
 					<p id="error-weight" class="error_hidden error_style_input">Введите данные в поле</p>
 				</div>
-				<div >
-					<input class="form_block-input speed" type="number" name="speed" placeholder="Введите скорость" >
+				<div>
+					<input class="form_block-input speed" type="number" name="speed" placeholder="Введите скорость">
 					<p id="error-speed" class="error_hidden error_style_input">Введите данные в поле</p>
 				</div>
-				<div >
-					<textarea class="inform" name="textarea" id="" cols="50" rows="10" placeholder="История"></textarea>
+				<div>
+					<textarea class="inform" name="textarea" cols="50" rows="10" placeholder="История"></textarea>
 					<p id="error-textarea" class="error_hidden error_style_input">Введите данные в поле</p>
 				</div>
 				<button class="form_block_button" type="submit">Добавить</button>
