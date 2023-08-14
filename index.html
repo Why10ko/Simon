@@ -15,22 +15,26 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="container">
-			<nav>
-				<a class="headerScrool" href="#content">Главный контент</a>
-				<a class="headerScrool" href="#footer">Контакты</a>
-			</nav>
+
+	<header id="header">
+		<div class="header_box">
+			<div class="header_nav_container">
+				<nav>
+					<a class="header_nav_container_a" href="#content">Главный контент</a>
+					<a class="header_nav_container_a" href="#footer">Контакты</a>
+				</nav>
+			</div>
+			<div class="header_base">
+				<h1 class="header_base_title">the Кот</h1>
+				<img class="header_base_img" src="./img/photo_2021-10-27_13-50-40.jpg" alt="Main Page">
+			</div>
 		</div>
 	</header>
+
 	<main class="main" id="main">
 		<article class="container">
-			<section class="intro">
-				<h1 class="intro_h1">the Кот</h1>
-				<img class="intro_img" src="./img/photo_2021-10-27_13-50-40.jpg" alt="">
-			</section>
 			<div class="title">
-				<section>
+				<section class="title_info">
 					<h2 class="title_h2">Simon</h2>
 					<p>Меня зовут Simon и это моя история</p>
 				</section>
@@ -47,20 +51,20 @@
 						<a class="next-button"></a>
 					</div>
 				</div>
-
-				<!--  конец слайдера -->
-
 			</div>
+			<!--  конец слайдера -->
+
+
 			<section id="content" class="content">
 				<h2>Немного смешных роликов</h2>
 				<div class="content_block">
 					<div class="content_section">
-						<video controls width="300" onloadstart="this.volume=0.5">
+						<video controls width="250" onloadstart="this.volume=0.5">
 							<source src="./img/Think.mp4" type="video/mp4">
 						</video>
 					</div>
 					<div class="content_section">
-						<video controls width="300" onloadstart="this.volume=0.1">
+						<video controls width="250" onloadstart="this.volume=0.1">
 							<source src="./img/Fight.mp4" type="video/mp4">
 						</video>
 					</div>
@@ -84,16 +88,17 @@
 					<p id="error-speed" class="error_hidden error_style_input">Введите данные в поле</p>
 				</div>
 				<div>
-					<textarea class="inform" name="textarea" cols="50" rows="10" placeholder="История"></textarea>
+					<textarea class="textarea_inform" name="textarea" cols="50" rows="10" placeholder="История"></textarea>
 					<p id="error-textarea" class="error_hidden error_style_input">Введите данные в поле</p>
 				</div>
 				<button class="form_block_button" type="submit">Добавить</button>
 			</form>
 		</article>
 	</main>
+
 	<footer id="footer" class="footer">
-		<address class="container">
-			<a class="footerScrool" href="#main">Вернуться наверх</a>
+		<address class="footer_container">
+			<a class="footer_scrool_button" href="#header">Вернуться наверх</a>
 			<ul>
 				<li>Номер телефона Симона +79030000000</li>
 				<li>Номер телефона Хозяина #1 +79030000001</li>

@@ -57,7 +57,7 @@ function validation() {
 function renderСard(e) {
 	e.preventDefault()
 
-		const 	id = Math.random()
+		const id = Math.random()
 		const	image = randomImageOfCard(arrImage)
 		const	nickname = formElements.nickname.value
 		const	weight = formElements.weight.value
@@ -65,13 +65,19 @@ function renderСard(e) {
 		const	textarea = formElements.textarea.value
 		
 		if (validation()) {
+
+			const cardsStorage = parseStorage('cards')	
+			localStorage.setItem('cards', JSON.stringify([...cardsStorage, {id,image,nickname,weight,speed,textarea}]))			
 			
-			const cardsStorage = parseStorage('cards')
-			localStorage.setItem('cards', JSON.stringify([...cardsStorage, {id,image,nickname,weight,speed,textarea}]))
-			
-			const card = new Card(id,image,nickname,weight,speed,textarea)
+			let card
+			if(nickname.toLowerCase() === 'марсель') {
+				card = new Card(id,'./img/Марсель.png',nickname,weight,speed,textarea) 
+			} else {
+				card = new Card(id,image,nickname,weight,speed,textarea)
+			}
+
 			cardContainer.append(card.render())
-			
+					
 			inputsForm.forEach(el => el.classList.remove('input_green_border'))
 			formBlockInputs.reset() 
 		} 
@@ -89,6 +95,11 @@ const cardsStorage = parseStorage('cards')
 
 cardsStorage.forEach(i => { 
 	const {id,image,nickname,weight,speed,textarea} = i
-	const card = new Card(id,image,nickname,weight,speed,textarea) 
+	let card
+	if(nickname.toLowerCase() === 'марсель') {
+		card = new Card(id,'./img/Марсель.png',nickname,weight,speed,textarea) 
+	} else {
+		card = new Card(id,image,nickname,weight,speed,textarea)
+	} 
 	cardContainer.append(card.render())
 })

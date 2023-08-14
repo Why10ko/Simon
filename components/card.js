@@ -32,7 +32,7 @@ class Card {
 				<p>Скорость: ${this.speed}</p>
 			</div>
 			<div class="add_block-description">
-				<p class="add_block-description_paragraph">${this.description}</p>
+				<p class="add_block-description_paragraph">Описание: ${this.description}</p>
 			</div>
 			<img src='img/closeImg.png' class="imgCloseCard"></img>
 		`)
